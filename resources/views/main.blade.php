@@ -5,5 +5,5 @@ Homepage
 @endsection
 
 @section('content')
-
+test
 @endsection
