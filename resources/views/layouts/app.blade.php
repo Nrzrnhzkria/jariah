@@ -62,28 +62,21 @@
 
 </head>
 <body class="theme-light bg-white" data-highlight="highlight-red">
-    <div id="page">   
+
+    <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+    <div id="page" data-swup="0" class="device-is-ios">   
         <div class="header header-fixed header-logo-left mb-3">
             <img src="{{ asset('backend/img/logo.png') }}" href="index.html" class="header-logo" alt="logo">
-            <a href="#" class="header-icon header-icon-3 text-primary">Pengunjung</a>
-            <a href="#" class="header-icon header-icon-3">
-                <svg width="118" height="32" viewBox="0 0 118 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="102" cy="16" r="15.5" stroke="#1D65BA"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M102.324 15.9773C99.0617 15.9773 96.4175 18.6216 96.4175 21.8834V22.8284C96.4175 23.2198 96.1002 23.5372 95.7087 23.5372C95.3173 23.5372 95 23.2198 95 22.8284V21.8834C95 17.8387 98.2789 14.5598 102.324 14.5598C106.368 14.5598 109.647 17.8387 109.647 21.8834V22.8284C109.647 23.2198 109.33 23.5372 108.938 23.5372C108.547 23.5372 108.23 23.2198 108.23 22.8284V21.8834C108.23 18.6216 105.585 15.9773 102.324 15.9773Z" fill="#1D65BA"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M97.8349 11.4887C97.8349 9.00964 99.8446 7 102.324 7C104.803 7 106.812 9.00963 106.812 11.4887C106.812 13.9676 104.803 15.9773 102.324 15.9773C99.8446 15.9773 97.8349 13.9676 97.8349 11.4887ZM102.324 8.41747C100.627 8.41747 99.2524 9.79248 99.2524 11.4887C99.2524 13.1848 100.627 14.5598 102.324 14.5598C104.02 14.5598 105.395 13.1848 105.395 11.4887C105.395 9.79249 104.02 8.41747 102.324 8.41747Z" fill="#1D65BA"/>
-                </svg>
+            <a href="#" class="header-icon header-icon-3 color-blue-dark">Pengunjung</a>
+            <a href="#" class="header-icon header-icon-1 color-blue-dark">
+                <i class="fa fa-user border border-primary rounded-circle p-2"></i>
             </a>
-        </div>    
-        <div class="page-content header-clear">
-            <div class="search-box search-header background-changer bg-theme">
-                <i class="fa fa-search"></i>
-                <input type="text" class="border-0" placeholder="Cari Kempen " data-search="">
-                <a href="#" class="clear-search disabled mt-0"><i class="fa fa-times color-red-dark"></i></a>
-            </div>
-        </div>
+        </div>  
        
         @yield('content')
+
     </div>
     <script type="text/javascript" src="{{ asset('frontend/scripts/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="{{ asset('frontend/scripts/custom.js') }}"></script>
 </body>

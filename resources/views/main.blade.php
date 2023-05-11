@@ -5,8 +5,136 @@ Utama
 @endsection
 
 @section('content')
+   
+<div class="row-fluid">
+    <div class="header-clear p-4">
+        <div class="search-box search-header background-changer bg-theme pt-1">
+            <i class="fa fa-search"></i>
+            <input type="text" class="rounded-s" placeholder="Cari Kempen " data-search="">
+            <a href="#" class="clear-search disabled mt-0"><i class="fa fa-times color-red-dark"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="row-fluid bg-blue-dark pt-4 pb-2">
+    <div class="col-md-12 px-4 pb-2">
+        <h2 class="color-white font-900">Jariah Kilat</h2>
+    </div>
+    
+    <div class="splide double-slider slider-no-arrows slider-no-dots splide--loop splide--ltr splide--draggable is-active" id="double-slider-home-1" style="visibility: visible;">
+        <div class="splide__track" id="double-slider-home-1-track">
+            <div class="splide__list" id="double-slider-home-1-list" style="transform: translateX(-937.5px);">
+
+                <div class="splide__slide splide__slide--clone" aria-hidden="true" tabindex="-1" style="width: 187.5px;">
+                    <div class="card card-style">
+                        <div class="card-body">
+                            <h5 class="card-title color-blue-dark">Berqat Sdn. Bhd.</h5>
+                        </div>
+                        <img src="{{ asset('backend/img/23.jpg') }}" class="img-fluid" alt="...">
+                    </div>
+                </div>
+
+                <div class="splide__slide splide__slide--clone" aria-hidden="true" tabindex="-1" style="width: 187.5px;">
+                    <div class="card card-style">
+                        <div class="card-body">
+                            <h5 class="card-title color-blue-dark">Berqat Sdn. Bhd.</h5>
+                        </div>
+                        <img src="{{ asset('backend/img/22.jpg') }}" class="img-fluid" alt="...">
+                    </div>
+                </div>
+
+                <div class="splide__slide splide__slide--clone" style="width: 187.5px;">
+                    <div class="card card-style">
+                        <div class="card-body">
+                            <h5 class="card-title color-blue-dark">Berqat Sdn. Bhd.</h5>
+                        </div>
+                        <img src="{{ asset('backend/img/21.jpg') }}" class="img-fluid" alt="...">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {{-- <ul class="splide__pagination">
+            <li><button class="splide__pagination__page" type="button" aria-controls="double-slider-home-1-slide01 double-slider-home-1-slide02" aria-label="Go to page 1"></button></li>
+            <li><button class="splide__pagination__page is-active" type="button" aria-controls="double-slider-home-1-slide02 double-slider-home-1-slide03" aria-label="Go to page 2" aria-current="true"></button></li>
+        </ul> --}}
+    </div>
+
+</div>
+
+
+<div class="row-fluid pt-4 pb-2">
+    <div class="col-md-12 px-4 mb-2">
+        <h2 class="color-blue-dark font-900">Jariah Berterusan</h2>
+    </div>
+
+    <div class="row p-4">
+        <div class="col-6 g-0">
+            <div class="card card-style">
+                <img src="{{ asset('backend/img/21.jpg') }}" class="img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                    <p class="color-blue-dark">
+                        RM21,000
+                    </p>
+                    <a href="#">Berqat Sdn. Bhd.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 g-0">
+            <div class="card card-style">
+                <img src="{{ asset('backend/img/22.jpg') }}" class="img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                    <p class="color-blue-dark">
+                        RM21,000
+                    </p>
+                    <a href="#">Berqat Sdn. Bhd.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 g-0">
+            <div class="card card-style">
+                <img src="{{ asset('backend/img/23.jpg') }}" class="img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                    <p class="color-blue-dark">
+                        RM21,000
+                    </p>
+                    <a href="#">Berqat Sdn. Bhd.</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 g-0">
+            <div class="card card-style">
+                <img src="{{ asset('backend/img/21.jpg') }}" class="img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                    <p class="color-blue-dark">
+                        RM21,000
+                    </p>
+                    <a href="#">Berqat Sdn. Bhd.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
 {{-- Footer --}}
+<div class="row">
 <div id="footer-bar" class="footer-bar-1">
     <a href="index.html" class="active-nav">
         <svg width="30" height="30" viewBox="10 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +183,7 @@ Utama
             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.50001 12.7368C5.47559 12.7368 2.21314 15.9769 2.21314 19.9737V21.1316C2.21314 21.6112 1.82165 22 1.33872 22C0.855787 22 0.464294 21.6112 0.464294 21.1316V19.9737C0.464294 15.0176 4.50973 11 9.50001 11C14.4903 11 18.5357 15.0176 18.5357 19.9737V21.1316C18.5357 21.6112 18.1442 22 17.6613 22C17.1784 22 16.7869 21.6112 16.7869 21.1316V19.9737C16.7869 15.9769 13.5244 12.7368 9.50001 12.7368Z" fill="#2C6ED3"/>
         </svg>
         <span>Akaun</span></a>
-</div>
+</div></div>
 {{-- End Footer --}}
 
 @endsection
